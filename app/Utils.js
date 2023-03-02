@@ -5,12 +5,8 @@ Ext.define("app.Utils",{
 
 
     /**
-     * Retorna un objeto que configura al componente de acuerdo a las proporciones responsivas
      * @author joshua
-     * @fecha 23 de diciembre 2020
-     * @param objLarge
-     * @param objMedium
-     * @returns {{"width < 992": *, "width >= 992": *}}
+     * @fecha 2/23/2023
      */
     getResponsive: function (objMedium, objSmall, objextraSmall,objexxtraSmall){
         objextraSmall = objextraSmall || objSmall;
@@ -23,5 +19,9 @@ Ext.define("app.Utils",{
             'width >= 576  && width < 768': objextraSmall,
             'width < 576 ': objexxtraSmall
         }
+    },
+
+    isMovil: function (){
+        return Ext.os.deviceType!="Desktop";
     }
 });

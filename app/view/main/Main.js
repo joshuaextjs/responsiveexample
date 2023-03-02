@@ -75,33 +75,37 @@ Ext.define('app.view.main.Main', {
     },
 
     items: [{
-        title: 'Tbar Responsive',
+        title: 'Tbar',
         iconCls: 'fa-home',
         // The following grid shares a store with the classic version's grid as well!
         items: [{
             xtype: 'paneltbarresponsive'
         }]
     }, {
-        title: 'Grid Columns',
+        title: 'Columns',
         iconCls: 'fa-user',
+        layout:"fit",
         items: {
             xtype:"gridpanelresponsive"
         }
     }, {
-        title: 'FormPanel',
+        title: 'Form',
         iconCls: 'fa-table',
+        layout:"fit",
         items: {
             xtype: 'formpanelresponsive'
         }
     }, {
-        title: 'Panel Layout',
+        title: 'Layout',
         iconCls: 'fa-users',
+        layout:"fit",
         items: {
-            xtype: 'formpanelresponsive'
+            xtype: 'panellayoutresponsive'
         }
     },{
-        title: 'Editor Calculator',
+        title: 'Calculator',
         iconCls: 'fa-cog',
+        layout:"fit",
         items: {
             xtype: 'grideditorcalculator'
         }
