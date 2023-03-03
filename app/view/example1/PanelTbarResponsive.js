@@ -10,10 +10,8 @@ Ext.define("app.view.example1.PanelTbarResponsive",{
         this.tbar = {
 
             items:[{
-                xtype: 'splitbutton',
                 text: 'Menu users',
                 iconCls: 'fa fa-bars',
-
                 responsiveConfig: util.getResponsive({
                     text: "Menu users 1",
                     iconAlign: "top",
@@ -31,7 +29,6 @@ Ext.define("app.view.example1.PanelTbarResponsive",{
                     hidden: true
                 })
             },{
-                xtype: 'splitbutton',
                 text: 'Menu users',
                 iconCls: 'fa fa-bars',
                 responsiveConfig: util.getResponsive({
